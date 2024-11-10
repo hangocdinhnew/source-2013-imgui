@@ -16,6 +16,15 @@ $Project
 	{
 		$File "$IMGUI_DIR/imgui/imgui_impl_source.cpp"
 		$File "$IMGUI_DIR/imgui/imgui_system.cpp"
+		{
+			$Configuration
+			{
+				$Compiler
+				{
+					$Create/UsePrecompiledHeader    "Not Using Precompiled Headers"
+				}
+			}
+		}
 		
 		$Folder "ImGUI"
 		{
