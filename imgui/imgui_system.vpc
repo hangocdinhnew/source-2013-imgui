@@ -5,7 +5,7 @@ $Configuration
 {
 	$Compiler
 	{
-		$PreprocessorDefinitions	"$BASE;IMGUI_DISABLE_INCLUDE_IMCONFIG_H;IMGUI_USER_CONFIG=\$QUOTEimgui/imconfig_source.h\$QUOTE"
+		$PreprocessorDefinitions	"$BASE;IMGUI_DISABLE_INCLUDE_IMCONFIG_H;IMGUI_USER_CONFIG=$QUOTEimgui/imconfig_source.h$QUOTE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS"
 		$AdditionalIncludeDirectories	"$BASE;$IMGUI_DIR;$IMGUI_DIR/thirdparty"
 	}
 }

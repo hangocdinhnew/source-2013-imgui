@@ -1,4 +1,5 @@
 #pragma once
+// clang-format off
 
 //#define IMGUI_DISABLE                                     // Disable everything: all headers and source files will be empty.
 
