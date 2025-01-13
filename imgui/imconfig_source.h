@@ -18,7 +18,7 @@
 
 // Disable obsolete APIs. No need to make more work for ourselves.
 #define IMGUI_DISABLE_OBSOLETE_FUNCTIONS
-#define IMGUI_DISABLE_OBSOLETE_KEYIO
+//#define IMGUI_DISABLE_OBSOLETE_KEYIO
 
 // Let's not link win32 for everything we include Dear ImGui with...
 #define IMGUI_DISABLE_WIN32_FUNCTIONS
@@ -45,15 +45,15 @@ IMGUI_API uint64		ImFileWrite( const void *data, uint64 size, uint64 count, ImFi
 //#define IMGUI_USE_STB_SPRINTF
 
 
-#include "mathlib/vector2d.h"
-#include "mathlib/vector4d.h"
-#define IM_VEC2_CLASS_EXTRA												\
-	ImVec2( const Vector2D& f ) : x( f.x ), y( f.y ) {}		\
-	operator Vector2D() const { return Vector2D( x, y ); }
+//#include "mathlib/vector2d.h"
+//#include "mathlib/vector4d.h"
+//#define IM_VEC2_CLASS_EXTRA												\
+//	ImVec2( const Vector2D& f ) : x( f.x ), y( f.y ) {}		\
+//	operator Vector2D() const { return Vector2D( x, y ); }
 
-#define IM_VEC4_CLASS_EXTRA																\
-	ImVec4( const Vector4D& f ) : x( f.x ), y( f.y ), z( f.z ), w( f.w ) {}	\
-	operator Vector4D() const { return Vector4D( x, y, z, w ); }
+//#define IM_VEC4_CLASS_EXTRA																\
+//	ImVec4( const Vector4D& f ) : x( f.x ), y( f.y ), z( f.z ), w( f.w ) {}	\
+//	operator Vector4D() const { return Vector4D( x, y, z, w ); }
 
 
 class IMaterial;
